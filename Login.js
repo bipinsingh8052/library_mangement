@@ -1,9 +1,7 @@
-// function sub(){
+ // function sub(){
 //     
 // }
-function refer(){
-    preventdeafult();
-}
+
 let loginbtn =document.querySelector(".log");
 let regbtn =document.querySelector(".reg");
 loginbtn.addEventListener("click",()=>{
@@ -22,26 +20,37 @@ regbtn.addEventListener("click",()=>{
     
 })
 
-let button =document.querySelector("form button");
-console.log(button);
-button.addEventListener("click",()=>{
+function login(){
     let a =document.querySelector(".email input");
-        let b= document.querySelector(".password input");
+    let b= document.querySelector(".password input");
+    let data = JSON.parse(localStorage.getItem("libary"));
+    console.log(data.eamil);
+    console.log(data.password)
+    console.log(data);
+    console.log(a.value,b.value);
+    if(!(a.value == data.eamil)){
+        a.style.color="red";
+        window.alert("Please Enter  again email")
+        a.focus();
+        a.value="";
+       return false;
         
-        console.log(a.value,b.value);
-        if(!(a.value.includes('.com') && a.value.includes('@gmail'))){
-            a.style.color="red";
-            window.alert("Please Enter the write again email")
-            a.focus();
-            a.value="";
-            return false;
-            
-        }
-        let c= document.querySelector("form");
-        console.log(c.setAttribute("action","/first_page/home_page_/index.html"));
-        console.log(c);
-        return true;
-})
+    }
+    if(!(b.value == data.password)){
+        b.style.color="red";
+        window.alert("Please Enter  again password")
+        b.focus();
+        b.value="";
+       return false;
+        
+    }
+    // let c= document.querySelector("form");
+    // console.log(c.setAttribute("action","/first_page/home_page_/index.html"));
+    // console.log(c);
+    return true;
+
+}
+
 function eyes(){
     let a=document.querySelector(".password .main_password #eyes");
     let c= document.querySelector("#eyessecond");
@@ -65,10 +74,10 @@ function eyes(){
     
 }
 
-function input(){
-    let a =document.querySelector(".email input") ;
-    // a.style.color="black";
-}
+// function input(){
+//     let a =document.querySelector(".email input") ;
+//     // a.style.color="black";
+// }
 
 function h(){
  let a=document.querySelector("form button");
@@ -87,16 +96,16 @@ function j(){
     a.style.border="0.5px solid black";
    }
 
-   function login(cla){
+//    function login(cla){
     
-    let a =document.querySelector(`${cla}`).style.cssText=`border-bottom: 2px solid transparent;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    cursor: pointer;`;
-    console.log(a);
+//     let a =document.querySelector(`${cla}`).style.cssText=`border-bottom: 2px solid transparent;
+//     padding-bottom: 10px;
+//     padding-left: 10px;
+//     padding-right: 10px;
+//     cursor: pointer;`;
+//     console.log(a);
 
-   }
+//    }
 
    function loginout(cla){
     let a =document.querySelector(`${cla}`).style.cssText=`border-bottom: 2px solid red;

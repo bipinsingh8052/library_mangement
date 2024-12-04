@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="login.css">
     <script src="Login.js" defer></script>
 </head>
-<body onload="refer()">
+<body >
     <div class="container">
         <div class="login">
         <div class="heading">
             <h1 class="log" onmouseleave="login('.log')" onmouseover="loginout('.log')">Login</h1>
             <h1 class="reg" onmouseleave="login('.reg')" onmouseover="loginout('.reg')">Register</h1>
         </div>
-        <form action="home_page_/home.html" id="login_form">
+        <form action="./dashboard.html" id="login_form">
 
             <div class="email">
              <p>Enter your Email Id</p>
@@ -32,8 +32,8 @@
              </div>
              </div>
             </div>
-            <button  onmouseleave="h()" onmouseover="j()" >Login</button>
-            <a href="#">Forget password</a>
+            <button  onmouseleave="h()" onmouseover="j()"  onclick=" return login();">Login</button>
+            <a href="./index.html">Forget password</a>
          </form>
 
 

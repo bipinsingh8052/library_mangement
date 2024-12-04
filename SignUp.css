@@ -14,8 +14,8 @@
     background-size: cover;
   }
   .container .login {
-    height: 320px;
-    width: 320px;
+    height: 500px;
+    width: 500px;
     border: 0.5px solid black;
     background-color: transparent;
     box-shadow: -1px 1px 12px 4px oldlace;
@@ -67,6 +67,42 @@
     padding-left: 10px;
     font-size: 15px;
   }
+
+
+  .container .login form .FIRSTNAME {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .container .login form .FIRSTNAME input {
+    height: 25px;
+    width: 100%;
+    outline: none;
+    border: 0.5px solid black;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .container .login form .LASTNAME {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .container .login form .LASTNAME input {
+    height: 25px;
+    width: 100%;
+    outline: none;
+    border: 0.5px solid black;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+
+  
+
+
+
   .container .login form .password {
     width: 90%;
     display: flex;
@@ -114,6 +150,9 @@
     font-size: 20px;
     border: 0.5px solid transparent;
   }
+  .container .login form button:hover{
+    cursor: pointer;
+  }
   .container .login form a {
     cursor: pointer;
     text-decoration: none;
@@ -121,3 +160,20 @@
   .container .login form a:hover {
     text-decoration: underline;
   }/*# sourceMappingURL=login.css.map */
+
+
+
+  .container .login form .C-password {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .container .login form .C-password input {
+    height: 25px;
+    width: 100%;
+    outline: none;
+    border: 0.5px solid black;
+    padding-left: 10px;
+    font-size: 15px;
+  }
