@@ -6,6 +6,7 @@
     <title>Library Management</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -13,11 +14,11 @@
             <nav>
                 <h1>ADMIN DASHBOARD</h1>
                 <ul>
-                    <li> <span><i class="fa-solid fa-user"></i></span>Dashboard </li>
-                    <li> <span><i class="fa-solid fa-book-open"></i></span>Student Book Detail</li>
-                    <li> <span><i class="fa-regular fa-bookmark"></i></span>Issue Books</li>
-                    <li><span><i class="fa-solid fa-bars"></i></span> Library</li>
-                    <li><span><i class="fa-solid fa-gear"></i></span> Setting</li>
+                    <li id="das1"> <span><i class="fa-solid fa-user"></i></span>Dashboard </li>
+                    <li id="student2"> <span><i class="fa-solid fa-book-open"></i></span>Student Book Detail</li>
+                    <li id="issue3"> <span><i class="fa-regular fa-bookmark"></i></span>Issue Books</li>
+                    <li id="insert4"><span><i class="fa-solid fa-bars"></i></span> Library</li>
+                    <li id="setting5"><span><i class="fa-solid fa-gear"></i></span> Setting</li>
                     <li><a href="./Login.html"><span><i class="fa-solid fa-right-from-bracket"></i></span> Logout</a></li>
                 </ul>
             </nav>
@@ -33,7 +34,8 @@
                 <p>Library  Management System</p>
             </div>
             <div class="all_file">
-                <div class="dashboard">
+
+                 <!-- <div class="dashboard">
                     <table>
                         <tr>
                             <th>Enrollment No.</th>
@@ -83,7 +85,7 @@
                         </TR>
                         
                     </table>
-                </div>
+                </div>  -->
             
 
 
@@ -144,7 +146,7 @@
                  <!-- issue book  -->
 
 
-                 <!-- <div class="issue_book">
+                 <div class="issue_book">
                     <table>
                         <tr>
                             <th>Id</th>
@@ -197,7 +199,7 @@
                             <td>College Name</td>
                         </tr>
                     </table>
-                 </div> -->
+                 </div>
 
 
                  <!-- libaray insert -->
