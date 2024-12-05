@@ -15,9 +15,9 @@
                 <h1>ADMIN DASHBOARD</h1>
                 <ul>
                     <li id="das1"> <span><i class="fa-solid fa-user"></i></span>Dashboard </li>
-                    <li id="student2"> <span><i class="fa-solid fa-book-open"></i></span>Student Book Detail</li>
-                    <li id="issue3"> <span><i class="fa-regular fa-bookmark"></i></span>Issue Books</li>
-                    <li id="insert4"><span><i class="fa-solid fa-bars"></i></span> Library</li>
+                    <li id="student2" onclick="data_display()"> <span><i class="fa-solid fa-book-open"></i></span>Student Book Detail</li>
+                    <li id="issue3" onclick =" edit_Delete() "> <span><i class="fa-regular fa-bookmark"></i></span>Issue Books</li>
+                    <li id="insert4" onclick="Insert_data()"><span><i class="fa-solid fa-bars"></i></span> Library</li>
                     <li id="setting5"><span><i class="fa-solid fa-gear"></i></span> Setting</li>
                     <li><a href="./Login.html"><span><i class="fa-solid fa-right-from-bracket"></i></span> Logout</a></li>
                 </ul>
@@ -35,7 +35,7 @@
             </div>
             <div class="all_file">
 
-                 <!-- <div class="dashboard">
+                 <div class="dashboard">
                     <table>
                         <tr>
                             <th>Enrollment No.</th>
@@ -85,7 +85,7 @@
                         </TR>
                         
                     </table>
-                </div>  -->
+                </div> 
             
 
 
@@ -146,7 +146,7 @@
                  <!-- issue book  -->
 
 
-                 <div class="issue_book">
+                 <!-- <div class="issue_book">
                     <table>
                         <tr>
                             <th>Id</th>
@@ -199,7 +199,7 @@
                             <td>College Name</td>
                         </tr>
                     </table>
-                 </div>
+                 </div> -->
 
 
                  <!-- libaray insert -->
@@ -242,11 +242,60 @@
                             </div>
                         </div>
 
-                        <button type="submit"> Submited</button>
+                        <button  type="submit"> Submited</button>
                     </form>
                  </div> -->
             </div>
+
+
+           
+        </div>
+        <div class="show" onclick="closebtn()">
+            <div class="inner">
+                <div class="closebtn">
+                    <i class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                </div>
+                <form action="#">
+                    <div class="from">
+                        <div class="id">
+                            <label for="Email">Student Email Id:</label>
+                        <input type="text" readonly > 
+                        </div>
+                        <div class="edit_student_name">
+                            <label for="name">Student Name:</label>
+                             <input type="text"  placeholder="Enter the Name">
+                        </div>
+                        <div class="edit_Roll_no">
+                            <label for="Rollno">Roll Number:</label>
+                            <input type="text"  placeholder="Enter the Roll Number">
+                        </div>
+
+                        
+
+                        <div class="edit_Book_name">
+                            <label for="bookname">Book Name:</label>
+                            <input type="text"  placeholder="Enter the Book Name">
+                        </div>
+                        <div class="edit_authorname">
+                            <label for="Writername"> Book Author Name:</label>
+                            <input type="text" placeholder="Enter the book Author Name">
+                        </div>
+                        <div class="edit_collogename">
+                            <label for="collegename">Colloge Name:</label>
+                            <input type="text"  placeholder="Enter the College_Name">
+                        </div>
+
+                        <div class="edit_date">
+                            <label for="date">Current Date:</label>
+                        <input type="date"  placeholder="Enter the Date">
+                        </div>
+                    </div>
+
+                    <button  type="submit"> Submited</button>
+                </form>
+            </div>
         </div>
     </div>
+
 </body>
 </html>

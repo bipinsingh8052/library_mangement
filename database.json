@@ -1,86 +1,68 @@
 {
-    "STUDENT": [
-        {
-        "name": "Bipin Singh",
-        "RollNo":"0110cse423gt098",
-        "email":"bipinsingh80@gmail.com",
-        "bookName":"Nineteen Eighty-Four",
-        "Writer":"Secker & Warburg",
-        "CollegeName": "Vedica insitute ",
-        "id": "aee6",
-        "date":"08/08/2006"
-        },
-        {
-            "name": "Bipin Singh",
-            "RollNo":"0110cse423gt098",
-            "email":"bipinsingh80@gmail.com",
-            "bookName":"Nineteen Eighty-Four",
-            "Writer":"Secker & Warburg",
-            "CollegeName": "Vedica insitute ",
-            "id": "aee6"
-            },
-            {
-                "name": "Bipin Singh",
-                "RollNo":"0110cse423gt098",
-                "email":"bipinsingh80@gmail.com",
-                "bookName":"Nineteen Eighty-Four",
-                "Writer":"Secker & Warburg",
-                "CollegeName": "Vedica insitute ",
-                "id": "aee6"
-                },
-                {
-                    "name": "Bipin Singh",
-                    "RollNo":"0110cse423gt098",
-                    "email":"bipinsingh80@gmail.com",
-                    "bookName":"Nineteen Eighty-Four",
-                    "Writer":"Secker & Warburg",
-                    "CollegeName": "Vedica insitute ",
-                    "id": "aee6"
-                    },
-                    {
-                        "name": "Bipin Singh",
-                        "RollNo":"0110cse423gt098",
-                        "email":"bipinsingh80@gmail.com",
-                        "bookName":"Nineteen Eighty-Four",
-                        "Writer":"Secker & Warburg",
-                        "CollegeName": "Vedica insitute ",
-                        "id": "aee6"
-                        },
-                        {
-                            "name": "Bipin Singh",
-                            "RollNo":"0110cse423gt098",
-                            "email":"bipinsingh80@gmail.com",
-                            "bookName":"Nineteen Eighty-Four",
-                            "Writer":"Secker & Warburg",
-                            "CollegeName": "Vedica insitute ",
-                            "id": "aee6"
-                            },
-                            {
-                                "name": "Bipin Singh",
-                                "RollNo":"0110cse423gt098",
-                                "email":"bipinsingh80@gmail.com",
-                                "bookName":"Nineteen Eighty-Four",
-                                "Writer":"Secker & Warburg",
-                                "CollegeName": "Vedica insitute ",
-                                "id": "aee6"
-                                },
-                                {
-                                    "name": "Bipin Singh",
-                                    "RollNo":"0110cse423gt098",
-                                    "email":"bipinsingh80@gmail.com",
-                                    "bookName":"Nineteen Eighty-Four",
-                                    "Writer":"Secker & Warburg",
-                                    "CollegeName": "Vedica insitute ",
-                                    "id": "aee6"
-                                    },
-                                    {
-                                        "name": "Bipin Singh",
-                                        "RollNo":"0110cse423gt098",
-                                        "email":"bipinsingh80@gmail.com",
-                                        "bookName":"Nineteen Eighty-Four",
-                                        "Writer":"Secker & Warburg",
-                                        "CollegeName": "Vedica insitute ",
-                                        "id": "aee6"
-                                        }
-    ]
+  "STUDENT": [
+    {
+      "name": "Bipin Singh",
+      "RollNo": "0110cse423gt098",
+      "email": "bipinsingh80@gmail.com",
+      "bookName": "Nineteen Eighty-Four",
+      "Writer": "Secker & Warburg",
+      "CollegeName": "Vedica insitute ",
+      "id": "aee6"
+    },
+    {
+      "name": "Bipin Singh",
+      "RollNo": "0110cse423gt098",
+      "email": "bipinsingh80@gmail.com",
+      "bookName": "Nineteen Eighty-Four",
+      "Writer": "Secker & Warburg",
+      "CollegeName": "Vedica insitute ",
+      "id": "aee6"
+    },
+    {
+      "name": "Bipin Singh",
+      "RollNo": "0110cse423gt098",
+      "email": "bipinsingh80@gmail.com",
+      "bookName": "Nineteen Eighty-Four",
+      "Writer": "Secker & Warburg",
+      "CollegeName": "Vedica insitute ",
+      "id": "aee6"
+    },
+    {
+      "name": "Bipin Singh",
+      "RollNo": "0110cse423gt098",
+      "email": "bipinsingh80@gmail.com",
+      "bookName": "Nineteen Eighty-Four",
+      "Writer": "Secker & Warburg",
+      "CollegeName": "Vedica insitute ",
+      "id": "aee6"
+    },
+    {
+      "name": "Bipin Singh",
+      "RollNo": "0110cse423gt098",
+      "email": "bipinsingh80@gmail.com",
+      "bookName": "Nineteen Eighty-Four",
+      "Writer": "Secker & Warburg",
+      "CollegeName": "Vedica insitute ",
+      "id": "aee6"
+    },
+    {
+      "name": "Bipin Singh",
+      "RollNo": "0110cse423gt098",
+      "email": "bipinsingh80@gmail.com",
+      "bookName": "Nineteen Eighty-Four",
+      "Writer": "Secker & Warburg",
+      "CollegeName": "Vedica insitute ",
+      "id": "aee6"
+    },
+    {
+      "id": "d4e5",
+      "name": "rohit singh",
+      "RollNo": "01190877gh988",
+      "email": "rohit89@gmail.com",
+      "bookName": "enggering math",
+      "Writer": "Ak sharama",
+      "CollegeName": "mnit bhopal",
+      "date": "2024-12-02"
+    }
+  ]
 }
