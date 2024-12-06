@@ -151,7 +151,8 @@ nav ul li:hover{
 }
 .all_file .bookdetails table tr td{
     text-align: left;
-    padding: 20px;
+    padding: 18px;
+    /* border: 2px solid black; */
 }
 .all_file .bookdetails table tr th{
     text-align: center;
@@ -160,9 +161,21 @@ nav ul li:hover{
     border-bottom: 2px solid black;
     /* border: 0.1px solid black; */
 }
-.all_file .bookdetails table tr td:hover{
-    /* background-color: brown; */
-    border-radius: 10px;
+.all_file .bookdetails table tr td button{
+    background-color: rgb(166, 46, 62);
+    color: whitesmoke;
+    /* height: 100%; */
+    /* border-radius: 10px; */
+
+    border: none;
+    outline: none;
+    /* width: 50%; */
+    border-radius: 2px;
+    box-shadow: -2px -1px 8px 7px rgb(166, 46, 62);
+}
+.all_file .bookdetails table tr td button:hover{
+    background-color: rgb(28, 13, 72);
+    box-shadow: -2px -1px 8px 7px rgb(28, 13, 72);
     cursor: pointer;
 }
 
@@ -302,17 +315,19 @@ nav ul li:hover{
     cursor: pointer;
 }
 
+
 .show{
-    
     position: absolute;
-    height: 1000px;
+    top: 0px;
+    height: 100vh;
     width:100%;
-    /* background-color: rgba(0, 0, 0, 0.221); */
-    background-color: brown;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.221);
+    /* background-color: brown; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    /* display: block; */
 }
 .show .inner{
     height: 400px;
@@ -410,6 +425,10 @@ nav ul li:hover{
     background-color: rgb(53, 47, 100);
     color: whitesmoke;
     cursor: pointer;
+}
+
+.simple_container{
+    /* display: none; */
 }
 
 

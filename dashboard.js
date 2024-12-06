@@ -66,6 +66,11 @@ a.addEventListener("click",()=>{
 
 })
 
+
+
+
+
+
 async function data_display(){
     // console.log("nakjcn")
     let fet =await fetch("http://localhost:3000/STUDENT");
@@ -186,8 +191,58 @@ async function edit_Delete(){
 }
 
 async function edit_data(id){
+//     let i=1;
+let showda =document.querySelector(".simple_container");
+console.log(showda);
+let show_inner_data=`    <div class="show">
+                <div class="inner">
+                    <div class="closebtn">
+                        <i class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                    </div>
+                    <form action="#">
+                        <div class="from">
+                            <div class="id">
+                                <label for="Email">Student Email Id:</label>
+                            <input type="text" readonly > 
+                            </div>
+                            <div class="edit_student_name">
+                                <label for="name">Student Name:</label>
+                                <input type="text"  placeholder="Enter the Name">
+                            </div>
+                            <div class="edit_Roll_no">
+                                <label for="Rollno">Roll Number:</label>
+                                <input type="text"  placeholder="Enter the Roll Number">
+                            </div>
 
-   closebtn();
+                            
+
+                            <div class="edit_Book_name">
+                                <label for="bookname">Book Name:</label>
+                                <input type="text"  placeholder="Enter the Book Name">
+                            </div>
+                            <div class="edit_authorname">
+                                <label for="Writername"> Book Author Name:</label>
+                                <input type="text" placeholder="Enter the book Author Name">
+                            </div>
+                            <div class="edit_collogename">
+                                <label for="collegename">Colloge Name:</label>
+                                <input type="text"  placeholder="Enter the College_Name">
+                            </div>
+
+                            <div class="edit_date">
+                                <label for="date">Current Date:</label>
+                            <input type="date"  placeholder="Enter the Date">
+                            </div>
+                        </div>
+
+                        <button  type="submit" onclick="update_ALL('${id}')"> Submited</button>
+                    </form>
+                </div>
+            </div>
+`
+
+showda.innerHTML=show_inner_data;
+//    closebtn(i);
    let find=id;
    let fet =await fetch(`http://localhost:3000/STUDENT/${id}`);
     let dat= await fet.json();
@@ -204,29 +259,68 @@ async function edit_data(id){
 console.log(name,rollNo,idinfo,bookname,writer,colloge,date)
 
 }
-function closebtn(){
-    let i=1
-    if(i===1){
-    let show =document.querySelector(".show");
-    show.style.display="none"; 
-    i=0;
-    }
-    else{
-        let show =document.querySelector(".show");
-    show.style.display="block"; 
-    i=1;
-
-    }  
+function closebtn(i){
+    let show =document.querySelector(".simple_container");
+    show.innerHTML=" "; 
+    
+    
 }
 
 
 
+
+
+function update_ALL(id){
+    let userName=id;
+    // console.log(userName)
+    let name =document.querySelector(".from .edit_student_name input").value;
+    let rollNo =document.querySelector(".from .edit_Roll_no input").value;
+    let bookname=document.querySelector(".from .edit_Book_name input").value;
+    let writer=document.querySelector(".from .edit_authorname input").value;
+    let colloge=document.querySelector(".from .edit_collogename input").value;
+    let date=document.querySelector(".from .edit_date input").value;
+
+    // console.log(name,rollNo,bookname,writer,colloge,date);
+
+    let yes=window.confirm(`${name} is Submited a Book Or Not If Submited Click OK OtherWise Cancel `);
+    if(yes){
+         let obj={
+            "name":name,
+            "RollNo":rollNo,
+            "bookName":bookname,
+            "Writer":writer,
+            "CollegeName":colloge,
+            "date":date
+        }
+    fetch(`http://localhost:3000/STUDENT/${id}`,{
+        method:'PUT',
+        body :JSON.stringify(obj)
+    })
+    .then(re=>{return alert(`${name} your Editing  is  the sucessfully...!!`)});
+    closebtn();
+    }
+    else{
+        window.alert(`Invalid ${name} you not Change by the Library section..!!!!`)
+        closebtn();
+    }
+    
+
+}
+
+
+
+
+
+
 function delete_data(id,name){
-    console.log(id)
+    // console.log(id)
+    
+    
     let userName=name;
     console.log(userName)
     let yes=window.confirm(`${userName} is Submited a Book Or Not If Submited Click OK OtherWise Cancel `);
     if(yes){
+       
     fetch(`http://localhost:3000/STUDENT/${id}`,{
         method:'DELETE'
     })

@@ -3,37 +3,10 @@
     {
       "name": "Bipin Singh",
       "RollNo": "0110cse423gt098",
-      "email": "bipinsingh80@gmail.com",
       "bookName": "Nineteen Eighty-Four",
       "Writer": "Secker & Warburg",
       "CollegeName": "Vedica insitute ",
-      "id": "aee6"
-    },
-    {
-      "name": "Bipin Singh",
-      "RollNo": "0110cse423gt098",
-      "email": "bipinsingh80@gmail.com",
-      "bookName": "Nineteen Eighty-Four",
-      "Writer": "Secker & Warburg",
-      "CollegeName": "Vedica insitute ",
-      "id": "aee6"
-    },
-    {
-      "name": "Bipin Singh",
-      "RollNo": "0110cse423gt098",
-      "email": "bipinsingh80@gmail.com",
-      "bookName": "Nineteen Eighty-Four",
-      "Writer": "Secker & Warburg",
-      "CollegeName": "Vedica insitute ",
-      "id": "aee6"
-    },
-    {
-      "name": "Bipin Singh",
-      "RollNo": "0110cse423gt098",
-      "email": "bipinsingh80@gmail.com",
-      "bookName": "Nineteen Eighty-Four",
-      "Writer": "Secker & Warburg",
-      "CollegeName": "Vedica insitute ",
+      "date": "2024-12-28",
       "id": "aee6"
     },
     {
@@ -63,6 +36,16 @@
       "Writer": "Ak sharama",
       "CollegeName": "mnit bhopal",
       "date": "2024-12-02"
+    },
+    {
+      "id": "0f14",
+      "name": "nac jke",
+      "RollNo": "nca en e",
+      "email": "bcncke@gmial.com",
+      "bookName": "nc aen",
+      "Writer": "nce ce",
+      "CollegeName": " cne cn e ace",
+      "date": "2024-12-25"
     }
   ]
 }
