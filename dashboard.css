@@ -152,6 +152,7 @@ nav ul li:hover{
 .all_file .bookdetails table tr td{
     text-align: left;
     padding: 18px;
+    cursor: wait;
     /* border: 2px solid black; */
 }
 .all_file .bookdetails table tr th{
@@ -427,9 +428,7 @@ nav ul li:hover{
     cursor: pointer;
 }
 
-.simple_container{
-    /* display: none; */
-}
+
 
 
 
